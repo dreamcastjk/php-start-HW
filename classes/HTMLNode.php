@@ -16,6 +16,7 @@ class HTMLNode implements IPrintDocument {
         $this->nodeTitle = $nodeTitle;
         $this->document = [];
 
+
     }//__construct
 
     //вывод документа
