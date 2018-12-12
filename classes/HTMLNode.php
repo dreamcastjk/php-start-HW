@@ -16,19 +16,29 @@ class HTMLNode implements IPrintDocument {
         $this->nodeTitle = $nodeTitle;
         $this->document = [];
 
-
     }//__construct
 
     //вывод документа
     function PrintDocument($document){
 
-        foreach ($document as $key => $value){
+        $result = $this->nodeTitle . "</br>";
 
-            //echo $key . " " . $value;
+        if (count($this->document)  > 0){
 
-            print_r($value);
+            foreach ($this->document as $item){
 
-        }//foreach
+                echo $result .= $item->PrintDocument($item);
+
+            }//foreach
+        }//if
+
+//        foreach ($document as $key => $value){
+//
+//            //echo $key . " " . $value;
+//
+//            print_r($value);
+//
+//        }//foreach
 
     }//PrintDocument
 

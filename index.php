@@ -14,8 +14,10 @@ $head->AddNode($body);
 $body->AddNode($div);
 $body->AddNode($div);
 
-
-
-$html->PrintDocument($html);
-
 ?>
+
+<pre>
+    <?php
+    $html->PrintDocument($html);
+    ?>
+</pre>
