@@ -1,0 +1,8 @@
+<?php
+
+
+trait NodeTrait{
+
+
+
+}//NodeTrait
